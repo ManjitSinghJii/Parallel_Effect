@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+   
+    
+
+}
+
+.contener{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.img1, .img2{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+   
+    
+}
+
+.img2{
+    transform: translateZ(-40);
+    
+}
